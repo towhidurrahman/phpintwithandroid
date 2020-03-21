@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".ViewDataTable">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="2dp"
+        android:layout_marginHorizontal="1dp"
+
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+                />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date "
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+                />
+
+
+
+        </TableRow>
+
+          </TableLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width = "400dp"
+        android:layout_height = "500dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="2dp"
+        android:layout_marginHorizontal="1dp"
+
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotal"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+
+                />
+
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

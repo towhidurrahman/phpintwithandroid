@@ -1,0 +1,4 @@
+ssh-keygen -t rsa -b 4096 -C "towhidur.rhmn@gmail.com" -f ~/Desktop/APIIntegration/key
+ eval $(ssh-agent -s)
+ssh-add ~/Desktop/APIIntegration/key
+clip < ~/Desktop/APIIntegration/key.pub
